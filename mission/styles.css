@@ -1,0 +1,65 @@
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+
+.content {
+    max-width: 600px; 
+    padding: 40px;
+    text-align: center;
+}
+
+
+.title h1 {
+    font-size: 36px;
+    letter-spacing: 3px; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+}
+
+
+.title h2 {
+    color: #006EB6; 
+    font-size: 20px;
+    letter-spacing: 1.5px; 
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 10px;
+}
+
+
+main p {
+    text-align: left;
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+}
+
+
+.does-list {
+    text-align: left;
+    line-height: 1.5; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+}
+
+
+.does-list li {
+    margin-bottom: 10px;
+}
+
+
+footer .logo {
+    width: 150px; 
+    margin-top: 30px; 
+}
