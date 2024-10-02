@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Mooli', sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+nav.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu-btn {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+@media screen and (max-width: 600px) {
+    .menu-btn {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    nav.menu {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    nav.menu {
+        display: none; 
+    }
+
+    .menu-btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .menu-btn {
+        display: none; 
+    }
+
+    nav.menu {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center; 
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center; 
+    }
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    font-size: 0.9em;
+    text-align: left;
+}
