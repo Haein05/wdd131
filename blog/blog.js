@@ -20,6 +20,20 @@ const articles = [
         ages: '12-16',
         genre: 'Fantasy',
         stars: '⭐⭐⭐⭐'
+    },
+
+    {
+        id: 3,
+        title: "Belgariad Book One: Pawn of Prophecy",
+        date: "Feb 12, 2022",
+        description:
+        "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms...",
+        imgSrc:
+        "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+        imgAlt: "Book cover for Pawn of Prophecy",
+        ages: "12-16",
+        genre: "Fantasy",
+        stars: "⭐⭐⭐⭐⭐"
     }
 ];
 
@@ -35,8 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
         articleElement.innerHTML = `
             <div class="article-details">
                 <p><time datetime="${new Date(article.date).toISOString().split('T')[0]}">${article.date}</time></p>
-                <p>Ages ${article.ages}</p>
-                <p>${article.genre} | ${article.stars}</p>
+                <p> ${article.ages}</p>
+                <p>${article.genre}</p>
+                <p>${article.stars}</p>
             </div>
             <div class="article-content">
                 <h2>${article.title}</h2>

@@ -26,7 +26,7 @@ h1 {
 nav {
     display: flex;
     justify-content: flex-end;
-    padding: 10px 0;
+    padding: 10px 240px;
     border-top: 1px solid #EFC69B;
     border-bottom: 1px solid #EFC69B;
 }
@@ -55,7 +55,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 30px;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 20px auto;
 }
 
@@ -72,20 +72,7 @@ article {
     padding: 20px;
     margin: 20px auto;
     border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-/* Left Side (Details) */
-.article-details {
-    text-align: left;
-    font-size: 0.9em;
-    line-height: 1.5;
-    padding-right: 15px;
-}
-
-.article-details p {
-    margin: 10px 0;
-    text-align: left;
+    margin-bottom: 30px;
 }
 
 /* Right Side (Content) */
@@ -99,13 +86,17 @@ article {
     font-size: 1.6em;
     margin-bottom: 10px;
     font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
 }
 
 .article-content img {
-    max-width: 130px;
+    max-width: 200px;
     border-radius: 5px;
     margin-right: 20px;
     float: left;
+    display: block;
+    margin: 0 auto;
 }
 
 .article-content p {
@@ -165,3 +156,27 @@ footer {
     top: 0;
     outline: none;
 }
+
+.article-details time {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.article-details {
+    text-align: right;
+    padding-right: 15px;
+    line-height: 1.4;
+    border-right: 1px solid #EFC69B;
+    margin-right: 20px;
+}
+.article-content img {
+    display: block;
+    margin: 0 auto;
+}
+.article-content h2 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+article {
+    margin-bottom: 30px;
+}
+
