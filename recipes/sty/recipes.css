@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+:root {
+  --whitespace: 1rem;
+  --max-width: 960px;
+  --title: small-caps 4rem 'Patrick Hand Sc', cursive;
+  --label: small-caps 3rem 'Patrick Hand Sc', cursive;
+  --tags: 1.5rem Arial, Helvetica, sans-serif;
+  --text: 1rem Arial, Helvetica, sans-serif;
+  --flaticon: 0.6rem Arial, Helvetica, sans-serif;
+  --accent: #1b98e0; 
+  --dark: #333;
+  --light: #ebebeb;
+}
+
+body {
+  padding: var(--whitespace);
+  font: var(--text);
+  color: var(--dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  margin: var(--whitespace) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#heading, #search {
+  flex-basis: 100%;
+  display: flex;
+}
+
+#heading {
+  justify-content: center;
+  align-items: baseline;
+}
+
+#logo {
+  height: 4rem;
+}
+
+#title {
+  margin: 0;
+  font: var(--title);
+}
+
+#search {
+  width: 80%;
+  max-width: 1000px;
+  align-content: center;
+}
+
+#input {
+  flex-grow: 1;
+  height: 19px;
+}
+
+#button {
+  border-radius: 8px;
+  height: 1rem;
+}
+
+main {
+  border-top: solid var(--light);
+}
+
+.recipe {
+  max-width: var(--max-width);
+  margin: var(--whitespace) auto;
+  border: solid var(--dark);
+  padding: var(--whitespace);
+  display: flex;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.tags {
+  margin: var(--whitespace) 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--whitespace);
+}
+
+.tag {
+  border: thin solid var(--dark);
+  border-radius: 4px;
+  padding: 2px;
+  font: var(--tags);
+  text-transform: lowercase;
+}
+
+.label {
+  margin: 0;
+  font: var(--label);
+  color: var(--accent);
+}
+
+.description {
+  display: none;
+}
+
+footer {
+  padding: var(--whitespace);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+#flaticon {
+  font: var(--flaticon);
+  font-size: 1rem;
+  text-align: left;
+  order: 1;
+}
+
+#social {
+  display: flex;
+  gap: var(--whitespace);
+  justify-content: flex-end;
+  order: 2;
+}
+
+#social img {
+  height: 4rem;
+}
+
+
+@media (min-width: 600px) {
+  .recipe {
+    flex-direction: row;
+    gap: var(--whitespace);
+  }
+  .picture {
+    flex-basis: 50%;
+    margin: auto;
+  }
+  .text {
+    flex-basis: 50%;
+  }
+  .description {
+    display: block;
+  }
+  #flaticon {
+    margin-left: 11.5rem; /* Moves #flaticon slightly inward from the left */
+  }
+
+  #social {
+    margin-right: 11.3rem; /* Moves #social slightly inward from the right */
+  }
+}
+
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  #flaticon, #social {
+    order: initial;
+    justify-content: center;
+    text-align: center;
+    flex-basis: auto;
+  }
+}
