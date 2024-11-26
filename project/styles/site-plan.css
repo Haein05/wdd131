@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: #E9DBAD;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0 0 1em 0;
+}
+
+div {
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e6ddc3;
+    color: #001F3F;
+}
+
+h1, h2, h3 {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+p, li {
+    font-family: 'Corben', sans-serif;
+}
+
+#purpose,#description, #content, #scenarios, #color, #fonts, #wireframes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+#color h2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#color section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    grid-row: 2;
+}
+
+#blue-box, #yellow-box, #grey-box {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+#blue-box {
+    background-color: #001F3F;
+}
+
+#yellow-box {
+    background-color: #E9DBAD;
+}
+
+#grey-box {
+    background-color: #333;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+#proza {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+#corben {
+    font-family: 'Corben', sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: #E9DBAD;
+    width: 1200px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+

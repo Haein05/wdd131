@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Exercise Hub Site Plan - WDD131</h1>
+    <img src="images/logosmall.png" alt="Exercise Hub Logo">
+
+    <div id="name">
+        <h2>Site Name</h2>
+        <p>The name for the site, "Exercise Hub" was chosen because it will immediately be apparent to visitors what the topic of the site is. It is a brief and informative name that will not confuse visitors.</p>
+    </div>
+
+    <div id="purpose">
+        <h2>Site Purpose</h2>
+        <p>The purpose of Exercise Hub is to provide users with a simple way to track and visualize workout patterns. The home page will introduce them and give them an idea of what the site is about. A second page will give them information on the type of workouts we track. On the third, users will be able to input workout information, including type, length, and date.</p>
+    </div>
+
+    <div id="description">
+        <h2>Description of the dynamic elements</h2>
+        <p>Responsive Navigation Bar: For mobile users, a hamburger menu icon will open and close a navigation menu. JavaScript will handle the menu's visibility and smooth transition effects. </p>
+    </div>
+
+    <div id="content">
+        <h2>Content</h2>
+        
+        <!-- Home Page Content -->
+        <section id="home">
+            <h3>Welcome to Exercise Hub</h3>
+            <p>Track your workouts, visualize your progress, and achieve your fitness goals. Start tracking now!</p>
+        </section>
+    
+        <!-- Workout Types Page Content -->
+        <section id="workout-types">
+            <h3>Workout Types</h3>
+            <ul>
+                <li><strong>Cardio:</strong> Boost endurance with running, cycling, or HIIT.</li>
+                <li><strong>Strength Training:</strong> Build muscle with weights and resistance.</li>
+                <li><strong>Flexibility:</strong> Improve mobility with yoga and stretching.</li>
+                <li><strong>Balance:</strong> Enhance stability with pilates and balance drills.</li>
+            </ul>
+        </section>
+    
+        <!-- Workout Tracking Page Content -->
+        <section id="tracking">
+            <h3>Track Your Workouts</h3>
+            <form id="workout-form">
+                <label for="workout-type">Workout Type:</label>
+                <input type="text" id="workout-type" name="workout-type" placeholder="e.g., Cardio">
+                
+                <label for="duration">Duration (in minutes):</label>
+                <input type="number" id="duration" name="duration" placeholder="e.g., 30">
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                
+                <button type="submit">Submit Workout</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="scenarios">
+        <h2>Scenarios</h2>
+        <ul>
+            <li>-What advanced features can help me analyze my workouts and improve my performance?</li>
+            <li>-How can I start exercising regularly and track my progress as a beginner?</li>
+            <li>-How can I fit effective workouts into my busy schedule and track my fitness without spending too much time?</li>
+        </ul>
+    </div>
+
+    <div id="color">
+        <h2>Color Schema</h2>
+        <section>
+            <div id="blue-box"></div>
+            <h3>#001F3F</h3>
+        </section>
+        <section>
+            <div id="yellow-box"></div>
+            <h3>#E9DBAD</h3>
+        </section>
+        <section>
+            <div id="grey-box"></div>
+            <h3>#333</h3>
+        </section>
+    </div>
+
+    <div id="fonts">
+        <h2>Typography</h2>
+        <section>
+            <h3>Proza Libre</h3>
+            <p  id="proza">This font will be used in headers and page titles.</p>
+        </section>
+        <section>
+            <h3  id="corben">Corben</h3>
+            <p>This font will be used in paragraph sections and descriptions on the pages.</p>
+        </section>
+    </div>
+
+    <div id="wireframes">
+        <h2>Wireframes</h2>
+        <h3>Home page</h3>
+        <img src="images/wire1.png" alt="homepage">
+        <h3>Child page</h3>
+        <img src="images/wire2.png" alt="childpage">
+    </div>
+    <footer>
+        <p>Haein Lee - BYU-I - WDD131</p>
+    </footer>
+</body>
+</html>
