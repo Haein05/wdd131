@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Hub - Exercises</title>
+    <meta name="description" content="WDD 131 -  Final Project - Exercise Page">
+    <meta name="author" content="Haein Lee">
+    <link rel="stylesheet" href="styles/exercises.css">
+    <script defer src="scripts/exercises.js"></script>
+    <script defer src="scripts/project.js"></script>
+    <script defer src="../scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logosmall.png" alt="Exercise Hub Logo" width="200">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Exercises</a></li>
+                <li><a href="tracking.html">Tracking</a></li>  
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+
+    <h1>Tracked Exercises</h1>
+    <div id="selector">
+    <label for="exerciseTypeList">Filter by exercise type:</label>
+        <select id="exerciseTypeList">
+        <option value="all">All</option>
+        <option value="cardio">Cardio</option>
+        <option value="strength">Strength</option>
+        <option value="weights">Weights</option>
+        <option value="flexibility">Flexibility</option>
+        <option value="light">Light</option>
+        </select>
+    </div>
+  
+    <div id="exerciseContainer"></div>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Haein Lee</p>
+        <p id="lastModified" class="colored"></p>
+    </footer>
+</body>
+</html>
